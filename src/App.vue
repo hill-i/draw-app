@@ -1,18 +1,20 @@
 <template>
-  <div class="flex-row">
-    <side-bar class=""></side-bar>
-    <div class="flex-shrink-0 w-9/12">コンテンツ</div>
+  <div class="flex flex-col w-screen">
+    <app-bar></app-bar>
+    <div class="w-3/4">
+      <span>コンテンツ</span>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue'
-  import SideBar from './components/SideBar.vue'
+  import AppBar from './components/AppBar.vue'
 
   export default defineComponent({
     name: 'App',
     components: {
-      SideBar,
+      AppBar,
     },
   })
 </script>
