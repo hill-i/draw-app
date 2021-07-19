@@ -1,12 +1,12 @@
 <template>
   <div class="w-100 shadow">
     <div class="flex flex-row items-center">
-      <div class="px-4 text-left text-2xl">ヘッダー</div>
+      <div class="pl-4 text-left text-2xl">ヘッダー</div>
       <div class="flex-grow"></div>
       <template v-for="item in items" :key="item.title">
         <app-bar-item v-bind="item" class="md:px-4 px-2 py-4"></app-bar-item>
       </template>
-      <search-icon :on-click="openSearchDialog" class="p-4"></search-icon>
+      <search-icon :on-click="openSearchDialog"></search-icon>
     </div>
   </div>
 </template>

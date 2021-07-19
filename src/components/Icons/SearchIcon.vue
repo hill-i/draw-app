@@ -1,5 +1,5 @@
 <template>
-  <div class="cursor-pointer" @click="onClick">
+  <div class="cursor-pointer hover:bg-gray-100 rounded-full p-2" @click="onClick">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-6 w-6"
